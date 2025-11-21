@@ -1,3 +1,7 @@
+# 扫描指定的 Python 文件（或文件夹内的所有 .py 文件），查找其中被转义为十六进制字节序列的字符串（例如 \xe4\xbd\xa0\xe5\xa5\xbd），将其还原为可读的 UTF-8 文本（例如 你好），并直接修改原文件保存。
+# 示例用法：uv run decode\decode_utf8_in_py.py xxxscript
+
+
 import os
 import re
 import argparse
